@@ -1,0 +1,141 @@
+body {
+    background-color: #B08B29;
+}
+
+    h1
+        {
+        justify-content: center;
+         align-items: center;
+         height: 154px;
+        display: flex;
+        background-color: #B08B29;
+        text-align: center; 
+        color: #000;
+font-family: Inter;
+font-size: 60px;
+margin: 0px;
+padding: 0px;
+font-weight: 400;}
+
+ul {
+    height: 106px;
+    background: #E8D84E;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2  {
+    margin: 0;
+  }
+  
+         
+
+.menu {
+    list-style: none;
+    padding: 0; 
+    display: flex;
+}
+
+
+.menu a {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px 35px; /* Ajusta el espaciado vertical y horizontal */
+    background-color: #687616;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0 70px;
+    /* margin-right: 110px; Ajusta según necesidades */
+    /* width: 245.799px; Ajusta según necesidades */
+    /* height: 100px; Ajusta según necesidades */
+    flex-shrink: 0;
+    flex-grow: 1;
+    
+}
+.menu a:hover {
+    background-color: #5daa06;
+}
+
+main{
+    height: 630px;
+background-color:#C7BA45;
+display: flex;
+justify-content: center; /* Centra horizontalmente */
+align-items: center;}
+
+img {
+    width: 420px;
+    height: 350px;
+    border-radius: 50px;
+    background: url(<img/SmartSelect_20230403_235925_Photos.jpg>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 120px;
+    margin-left: 80px;
+}
+
+div {
+    width: 620px;
+    height: 350px;
+    border-radius: 40px;
+    background: #E8D84E;
+    display: inline-block; 
+    vertical-align: middle;
+    padding-left: 10px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+h2 {
+    
+    padding-top: 30px;
+    font-size: 30px
+}
+
+footer{
+height: 70px;
+text-align: center;
+}
+
+/* Estilos para pantallas pequeñas (Móviles) */
+@media (max-width: 480px) {
+    body {
+        background-color: #F0F0F0; /* Cambia el color de fondo para móviles */
+    }
+
+    h1 {
+        font-size: 40px; /* Reduce el tamaño del título principal */
+    }
+
+    .menu a {
+        padding: 10px 20px; /* Reduce el espaciado de los elementos del menú */
+    }
+
+    main {
+        height: auto; /* Permite que la altura del contenido principal se ajuste automáticamente */
+    }
+
+    img {
+        width: 100%; /* Asegura que la imagen se ajuste al ancho de la pantalla */
+        margin: 10px 0; /* Agrega un pequeño margen vertical para la imagen */
+    }
+
+    div {
+        max-width: 100%; /* Asegura que el div se ajuste al ancho de la pantalla */
+        margin: 10px 0; /* Agrega un pequeño margen vertical para el div */
+    }
+
+    h2 {
+        font-size: 24px; /* Reduce el tamaño del título h2 */
+    }
+
+    footer {
+        height: auto; /* Permite que la altura del pie de página se ajuste automáticamente */
+        margin-top: 20px; /* Agrega espacio entre el contenido y el pie de página */
+    }
+}
