@@ -60,6 +60,8 @@ h1, h2  {
     background-color: #5daa06;
 }
 
+
+
 main{
     height: 630px;
 background-color:#C7BA45;
@@ -102,3 +104,41 @@ height: 70px;
 text-align: center;
 }
 
+@media (max-width: 480px) {
+
+
+body {
+    
+}
+
+h1 {
+    
+}
+
+.menu a {
+    
+}
+
+main {
+    
+}
+
+img {
+    width: 50%; /* Asegura que la imagen se ajuste al ancho de la pantalla */
+    margin: 10px 0; /* Agrega un pequeño margen vertical para la imagen */
+}
+
+div {
+    max-width: 90%; /* Asegura que el div se ajuste al ancho de la pantalla */
+    margin: 10px 0; /* Agrega un pequeño margen vertical para el div */
+}
+
+h2 {
+    font-size: 24px; /* Reduce el tamaño del título h2 */
+}
+
+footer {
+    height: auto; /* Permite que la altura del pie de página se ajuste automáticamente */
+    margin-top: 20px; /* Agrega espacio entre el contenido y el pie de página */
+}
+}
