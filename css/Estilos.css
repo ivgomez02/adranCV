@@ -97,7 +97,14 @@ div {
 h2 {
     
     padding-top: 30px;
-    font-size: 30px
+    font-size: 38px
+}
+.infop {
+    display: grid;
+    list-style: none;
+    font-size: 26px;
+    text-align: left;
+    
 }
 
 footer{
