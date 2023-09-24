@@ -1,3 +1,4 @@
+
 body {
     background-color: #B08B29;
 }
@@ -104,41 +105,26 @@ height: 70px;
 text-align: center;
 }
 
-@media (max-width: 480px) {
-
-
-body {
-    
-}
-
-h1 {
-    
-}
-
+@media (max-width: 500px) {
+.menu {display: grid;
+       height: 180px;}
 .menu a {
-    
-}
-
-main {
-    
-}
-
+    padding: 10px 20px;}
+main { width: 100%;
+    display: grid;
+    text-align: center;}
 img {
-    width: 50%; /* Asegura que la imagen se ajuste al ancho de la pantalla */
-    margin: 10px 0; /* Agrega un pequeño margen vertical para la imagen */
-}
-
+    width: 60%;
+    height: auto;}
 div {
-    max-width: 90%; /* Asegura que el div se ajuste al ancho de la pantalla */
-    margin: 10px 0; /* Agrega un pequeño margen vertical para el div */
-}
-
+    width: 100%; 
+    display: grid;
+        width: 100%;
+        margin: 0;
+        padding: 0;}
 h2 {
-    font-size: 24px; /* Reduce el tamaño del título h2 */
-}
-
+    font-size: 24px;}
 footer {
-    height: auto; /* Permite que la altura del pie de página se ajuste automáticamente */
-    margin-top: 20px; /* Agrega espacio entre el contenido y el pie de página */
-}
+    height: auto; 
+    margin-top: 20px;}
 }
