@@ -41,8 +41,8 @@ h1, h2  {
 
 
 .menu a {
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 20px 35px; /* Ajusta el espaciado vertical y horizontal */
+    text-align: center; 
+    padding: 20px 35px; 
     background-color: #687616;
     color: #fff;
     text-decoration: none;
@@ -50,9 +50,7 @@ h1, h2  {
     font-weight: bold;
     transition: background-color 0.3s ease;
     margin: 0 70px;
-    /* margin-right: 110px; Ajusta según necesidades */
-    /* width: 245.799px; Ajusta según necesidades */
-    /* height: 100px; Ajusta según necesidades */
+    
     flex-shrink: 0;
     flex-grow: 1;
     
@@ -67,7 +65,7 @@ main{
     height: 630px;
 background-color:#C7BA45;
 display: flex;
-justify-content: center; /* Centra horizontalmente */
+justify-content: center;
 align-items: center;}
 
 img {
