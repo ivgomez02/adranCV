@@ -50,7 +50,6 @@ h1, h2  {
     font-weight: bold;
     transition: background-color 0.3s ease;
     margin: 0 70px;
-    
     flex-shrink: 0;
     flex-grow: 1;
     
