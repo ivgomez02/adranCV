@@ -1,3 +1,48 @@
+/* Estilos para el formulario de contacto */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #B08B29;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label,
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background: #3498db;
+    color: #fff;
+    width: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+
+
+
 
 body {
     background-color: #B08B29;

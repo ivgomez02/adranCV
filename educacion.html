@@ -16,6 +16,7 @@
         <li><a href="competencias.html">Competencias</a></li>
         <li><a href="educacion.html">Educación</a></li>
         <li><a href="conocimientos.html">conocimientos</a></li>
+        <li><a href="contacto.html">contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -33,8 +34,24 @@
              <li>Tecnicatura en desarrollo de software en curso</li>
          </ul>
     </div>
+    <button onclick="cambiarModo()">Cambiar Modo</button>
+    <script>
+      window.onload = function() {
+        const estilos = document.querySelector('link[rel="stylesheet"]');
     
+        function cambiarModo() {
+            if (estilos && estilos.getAttribute('href').includes('Estilos.css')) {
+                estilos.setAttribute('href', 'css/EstilosModoOscuro.css');
+            } else if (estilos && estilos.getAttribute('href').includes('EstilosModoOscuro.css')) {
+                estilos.setAttribute('href', 'css/Estilos.css');
+            }
     
+            console.log('Cambio de modo activado');
+        }
+    
+        document.querySelector('button').addEventListener('click', cambiarModo);
+    };
+  </script>
   </main>
 
   <footer>

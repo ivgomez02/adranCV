@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilos.css"> 
+    <title>Mi currículum</title>
+</head>
+<body>
+  <header>
+    <h1>Curriculum Adrian Gomez</h1>
+    <nav>
+    <ul class="menu"> 
+        <li><a href="index.html">Datos personales</a></li>
+        <li><a href="competencias.html">Competencias</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="conocimientos.html">conocimientos</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+     <div>
+    <h2>!Comunícate conmigo¡</h2>
+
+    <form id="contactForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <p id="confirmationMessage" style="display: none;">¡Gracias por comunicarte conmigo!</p>
+    
+        
+    </div>
+    <button onclick="cambiarModo()">Cambiar Modo</button>
+    <script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Enviar los datos al servidor o servicio de email aquí...
+
+    // Muestra el mensaje de confirmación
+    const confirmationMessage = document.getElementById('confirmationMessage');
+    confirmationMessage.style.display = 'block';
+
+    // Reiniciar el formulario después de mostrar el mensaje
+    setTimeout(function() {
+        confirmationMessage.style.display = 'none';
+        document.getElementById('contactForm').reset();
+    }, 3000); // Mensaje desaparecerá después de 3 segundos (3000 milisegundos)
+});
+</script>
+
+    
+<script>
+
+    window.onload = function() {
+      const estilos = document.querySelector('link[rel="stylesheet"]');
+  
+      function cambiarModo() {
+          if (estilos && estilos.getAttribute('href').includes('Estilos.css')) {
+              estilos.setAttribute('href', 'css/EstilosModoOscuro.css');
+          } else if (estilos && estilos.getAttribute('href').includes('EstilosModoOscuro.css')) {
+              estilos.setAttribute('href', 'css/Estilos.css');
+          }
+  
+          console.log('Cambio de modo activado');
+      }
+  
+      document.querySelector('button').addEventListener('click', cambiarModo);
+  };
+</script>
+  </main>
+
+  <footer>
+
+    <p><b>Todos los derechos reservados 2023</b></p>
+  </footer>
+
+
+  </body>
+</html>
